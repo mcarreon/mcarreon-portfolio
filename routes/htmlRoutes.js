@@ -6,6 +6,10 @@ module.exports = function (app) {
     res.render("index");
   });
 
+  app.get("/m", function (req, res) {
+    res.render("message");
+  });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
 

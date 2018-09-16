@@ -4,7 +4,7 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 
-.intro-section {
+.intro-section, #message-page {
   background-color: #e2fcea;
 }
 
@@ -12,22 +12,26 @@ body {
   background-color: #f1eeee;
 }
 
-.intro-area, .content-area {
+.intro-area, .content-area, .message-section {
   width: 80%;
 }
 
-.intro-row, .content-row, .about-body, .contact-body {
+.intro-row, .content-row, .about-body, .contact-body, #message-page, .message-section {
   height: 100vh;
   max-height: 100vh;
 }
 
+label {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
 
 .list-group-item {
   line-height: 2.5;
 }
 
 a {
-  color: black;
+  color: #212529;
 }
 
 a:hover {
