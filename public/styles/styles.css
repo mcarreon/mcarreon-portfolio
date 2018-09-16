@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+body {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.intro-section {
+  background-color: #e2fcea;
+}
+
+.content-section {
+  background-color: #f1eeee;
+}
+
+.intro-area, .content-area {
+  width: 80%;
+}
+
+.intro-row, .content-row, .about-body, .contact-body {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+
+.list-group-item {
+  line-height: 2.5;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(255, 91, 255);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4.5em;
+}
