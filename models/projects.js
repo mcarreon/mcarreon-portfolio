@@ -36,7 +36,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: true
         },
         project_creation_date: {
-            type: DataTypes.STRING, 
+            type: DataTypes.DATE, 
             allowNull: true,
         }
     });

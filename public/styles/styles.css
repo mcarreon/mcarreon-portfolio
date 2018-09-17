@@ -9,14 +9,14 @@ body {
 }
 
 .content-section {
-  background-color: #f1eeee;
+  background-color: #fcfcfc;
 }
 
 .intro-area, .content-area, .message-section {
   width: 80%;
 }
 
-.intro-row, .content-row, .about-body, .contact-body, #message-page, .message-section {
+.intro-row, .content-area, .about-body, .contact-body, #message-page, .message-section {
   height: 100vh;
   max-height: 100vh;
 }
@@ -41,4 +41,45 @@ a:hover {
 
 h1 {
   font-size: 4.5em;
+}
+
+tbody > th {
+  font-size: .5em;
+}
+
+.project-data {
+  font-size: .8em;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-12 {
+  width: 12%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.project-desc-col {
+  max-width: 626px;
+}
+
+.project-desc {
+    max-width: 626px;
+    -webkit-line-clamp: 2;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.project-area-desc {
+  font-size: .8em;
 }
