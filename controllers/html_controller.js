@@ -12,6 +12,11 @@ module.exports = function (app) {
                 var finalDate = dateSub.substring(0, dateSub.indexOf(':') - 3);
                 e.dataValues.project_creation_date = finalDate;
 
+                if (e.dataValues.project_host === null) {
+                    e.dataValues.project_host = '#';
+                }
+
+
                 projectData.push(e);
             });
 
