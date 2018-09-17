@@ -1,4 +1,6 @@
 var db = require('../models');
+var Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 
 module.exports = function (app) {
   // return project table in json body
@@ -9,10 +11,12 @@ module.exports = function (app) {
   });
 
   // return project table with specific type of project
-  app.get("/api/projects/:type", function (req, res) {
+  app.get("/api/projects/:query", function (req, res) {
     db.project.findAll({
         where: {
-          project_type: req.params.type
+          [Op.or]: 
+            [{ project_name: req.params.query }, {project_type: req.params.query,}]
+          
         }
       })
       .then(function (data) {
